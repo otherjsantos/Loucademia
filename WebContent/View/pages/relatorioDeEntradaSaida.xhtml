@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:f="http://xmlns.jcp.org/jsf/core"
+xmlns:h="http://xmlns.jcp.org/jsf/html"
+xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+xmlns:jsf="http://xmlns.jcp.org/jsf"
+lang="pt-br"
+>
+	<ui:composition template="Layout.xhtml">
+		<ui:define name="conteudo">
+		    <h1>Relatórios de entradas e saídas</h1>
+		        
+		    <br />
+		        
+		    <div id="infoMessage">
+		        (Mensagem de erro!)
+		    </div>
+		        
+		    <br />
+		        
+		    <form>
+		        <fieldset>
+		            <legend>Parâmetros da Pesquisa</legend>
+		            
+		            <label for="id">ID</label><br />
+		            <input type="text" name="id" id="id" /><br />
+		            
+		            <label for="dataInicial">Data inicial</label><br />
+		            <input type="date" name="dataInicial" id="dataInicial" /><br />
+		            
+		            <label for="dataFinal">Data final</label><br />
+		            <input type="date" name="dataFinal" id="dataFinal" />
+		            
+		        </fieldset>  
+		        
+		        <br />
+		        
+		        <input type="submit" value="Gerar relatórios" />
+		    </form>
+		        
+		    <table>
+		        <tr>
+		            <th>ID</th>
+		            <th>Nome</th>
+		            <th>Entrada</th>
+		            <th>Saídas</th>
+		            <th>Duração</th>
+		        </tr>
+		        
+		        <tr>
+		            <td>1</td>
+		            <td>Carlos</td>
+		            <td>05/03/2019 10:05:04</td>
+		            <td>05/03/2019 10:05:04</td>
+		            <td>0</td>
+		        </tr>
+		        
+		        <tr>
+		            <td>1</td>
+		            <td>Maria</td>
+		            <td>05/03/2019 09:05:04</td>
+		            <td>05/03/2019 10:05:04</td>
+		            <td>1</td>
+		        </tr>
+		        
+		        <tr>
+		            <td>1</td>
+		            <td>Jose</td>
+		            <td>05/03/2019 08:05:04</td>
+		            <td>05/03/2019 10:05:04</td>
+		            <td>2</td>
+		        </tr>
+		        
+		        <tr>
+		            <td>1</td>
+		            <td>Alfredo</td>
+		            <td>05/03/2019 07:05:04</td>
+		            <td>05/03/2019 10:05:04</td>
+		            <td>3</td>
+		        </tr>
+		    </table>    
+    	</ui:define>
+	</ui:composition>
+</html>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+xmlns:f="http://xmlns.jcp.org/jsf/core"
+xmlns:h="http://xmlns.jcp.org/jsf/html"
+xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+xmlns:jsf="http://xmlns.jcp.org/jsf"
+lang="pt-br"
+>
+	<ui:composition template="Layout.xhtml">
+		<ui:define name="conteudo">		
+		    <h1>Relatórios de situações</h1>
+		        
+		    <br />
+		        
+		    <div id="infoMessage">
+		        (Mensagem de erro!)
+		    </div>
+		        
+		    <br />
+		 
+		    <form>
+		        <fieldset>
+		            <legend>Parâmetros de pesquisa</legend>
+		            <label for="situacao"></label>
+		            <select name="situacao" id="situacao">
+		                <option>Ativo</option>
+		                <option>Inativo</option>
+		                <option>Com pendência</option>
+		            </select>
+		        </fieldset>
+		        
+		        <br />
+		        
+		        <input type="submit" value="Gerar relatório" />
+		    </form>
+		        
+		        
+		    <table>
+		        <tr>
+		            <th>ID</th>
+		            <th>Nome</th>
+		            <th>SituaÃ§Ã£o</th>
+		            <th>Celular</th>
+		            <th>Fixo</th>
+		            <th>Ações</th>
+		        </tr>
+		        
+		        <tr>
+		            <td>1</td>
+		            <td>AndrÃ©</td>
+		            <td>ativo</td>
+		            <td>1111.1111</td>
+		            <td>1111.1111</td>
+		            <td>
+		                <input type="button" value="Editar" />
+		            </td>
+		        </tr>
+		
+		        <tr>
+		            <td>2</td>
+		            <td>Carlos</td>
+		            <td>inativo</td>
+		            <td>2222.2222</td>
+		            <td>2222.2222</td>
+		            <td>
+		                <input type="button" value="Editar" />
+		            </td>
+		        </tr>
+		        
+		        <tr>
+		            <td>3</td>
+		            <td>Sr.Maromba</td>
+		            <td>pendente</td>
+		            <td>3333.3333</td>
+		            <td>3333.3333</td>
+		            <td>
+		                <input type="button" value="Editar" />
+		            </td>
+		        </tr>
+		        
+		        <tr>
+		            <td>4</td>
+		            <td>JoÃ£o</td>
+		            <td>ativo</td>
+		            <td>4444.4444</td>
+		            <td>4444.4444</td>
+		            <td>
+		                <input type="button" value="Editar" />
+		            </td>
+		        </tr>
+		    </table>
+    	</ui:define>
+	</ui:composition>
+</html>
