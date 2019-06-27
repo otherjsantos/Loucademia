@@ -162,4 +162,9 @@ public class Aluno implements Serializable {
 		return true;
 	}
 
+	public void gerarMatricula() {
+		this.matricula = "00000001";
+		
+	}
+
 }
